@@ -7,7 +7,7 @@ function Home() {
            <main className={styles.main}>
                <section className={styles.section}>
                    <h2 className={styles.h2}>metrics</h2>
-                   <Link to={"/"}> <button className={styles.button}>statics</button> </Link>
+                   <Link to={"/Statistics"}> <button className={styles.button}>statistics</button> </Link>
                </section>
                <section className={styles.section}>
                    <h2 className={styles.h2}>diagrams</h2>
