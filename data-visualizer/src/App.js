@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Sidebar from "./components/Sidebar";
 import TaskDoneMetrics from "./pages/TaskDoneMetrics";
 import UserActivityMetrics from "./pages/UserActivityMetrics";
+import AverageCommentsMetrics from "./pages/AverageCommentsMetrics";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
                   <Route path="/" element={<Home />}/>
                   <Route path="/TaskDoneMetric" element={<TaskDoneMetrics />}/>
                   <Route path="/UserActivityMetrics" element={<UserActivityMetrics />}/>
+                  <Route path="/AverageCommentsMetrics" element={<AverageCommentsMetrics />}/>
               </Routes>
           </main>
       </div>
