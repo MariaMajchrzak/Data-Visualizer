@@ -1,11 +1,11 @@
 import {Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
 import Sidebar from "./components/Sidebar";
-import TaskDoneMetrics from "./pages/TaskDoneMetrics";
-import UserActivityMetrics from "./pages/UserActivityMetrics";
-import AverageCommentsMetrics from "./pages/AverageCommentsMetrics";
-import UserActivityDiagram from "./pages/UserActivityDiagram";
-import TaskDoneDiagram from "./pages/TaskDoneDiagram";
+import TaskDoneMetrics from "./pages/Metrics/TaskDoneMetrics";
+import UserActivityMetrics from "./pages/Metrics/UserActivityMetrics";
+import AverageCommentsMetrics from "./pages/Metrics/AverageCommentsMetrics";
+import UserActivityDiagram from "./pages/Diagrams/UserActivityDiagram";
+import TaskDoneDiagram from "./pages/Diagrams/TaskDoneDiagram";
 
 function App() {
   return (

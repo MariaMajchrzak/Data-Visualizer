@@ -1,5 +1,11 @@
 .sidebarConteiner{
     height: 100vh;
-    width: 10%;
-    background: #000;
+    width: 3%;
+    background: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.menuImg{
+    width: 3vw;
 }
