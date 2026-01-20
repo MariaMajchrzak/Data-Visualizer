@@ -8,6 +8,7 @@ function Home() {
                <section className={styles.section}>
                    <h2 className={styles.h2}>metrics</h2>
                    <Link to={"/TaskDoneMetric"}> <button className={styles.button}>Task Done</button> </Link>
+                   <Link to={"/UserActivityMetrics"}> <button className={styles.button}>User Activity</button> </Link>
                </section>
                <section className={styles.section}>
                    <h2 className={styles.h2}>diagrams</h2>
