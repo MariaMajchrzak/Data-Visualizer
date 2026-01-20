@@ -1,7 +1,7 @@
 import {Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
 import Sidebar from "./components/Sidebar";
-import Statistics from "./pages/Statistics";
+import TaskDoneMetrics from "./pages/TaskDoneMetrics";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
           <main className="pageContainer">
               <Routes>
                   <Route path="/" element={<Home />}/>
-                  <Route path="/Statistics" element={<Statistics />}/>
+                  <Route path="/TaskDoneMetric" element={<TaskDoneMetrics />}/>
               </Routes>
           </main>
       </div>
