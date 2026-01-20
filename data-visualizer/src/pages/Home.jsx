@@ -13,7 +13,7 @@ function Home() {
                </section>
                <section className={styles.section}>
                    <h2 className={styles.h2}>diagrams</h2>
-                   <Link to={"/"}> <button className={styles.button}>users activity</button> </Link>
+                   <Link to={"/UserActivityDiagram"}> <button className={styles.button}>Users activity</button> </Link>
                    <Link to={"/"}> <button className={styles.button}>tasks done</button> </Link>
                </section>
            </main>
