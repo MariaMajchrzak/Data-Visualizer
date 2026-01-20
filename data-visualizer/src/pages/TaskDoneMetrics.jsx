@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 
 function TaskDoneMetrics() {
     const [tasks,setTasks] = useState([]);
+    const [totalNumberOfTasks,setTotalNumberOfTasks] = useState(0);
 
     async function getTasks(){
         try{
@@ -12,6 +13,7 @@ function TaskDoneMetrics() {
             else{
                 console.log(response);
                 let json = await response.json();
+                setTotalNumberOfTasks(json.length);
                 let groupByStatus = Object.groupBy(json, item => item.completed)
                 setTasks(groupByStatus);
             }
@@ -25,7 +27,6 @@ function TaskDoneMetrics() {
 
     }, []);
 
-    const totalNumberOfTasks = Object.values(tasks).reduce((total, item) => total + item.length, 0);
     return (
         <div>
             <h2>

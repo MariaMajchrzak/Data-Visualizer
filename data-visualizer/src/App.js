@@ -5,6 +5,7 @@ import TaskDoneMetrics from "./pages/TaskDoneMetrics";
 import UserActivityMetrics from "./pages/UserActivityMetrics";
 import AverageCommentsMetrics from "./pages/AverageCommentsMetrics";
 import UserActivityDiagram from "./pages/UserActivityDiagram";
+import TaskDoneDiagram from "./pages/TaskDoneDiagram";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
                   <Route path="/UserActivityMetrics" element={<UserActivityMetrics />}/>
                   <Route path="/AverageCommentsMetrics" element={<AverageCommentsMetrics />}/>
                   <Route path="/UserActivityDiagram" element={<UserActivityDiagram />}/>
+                  <Route path="/TaskDoneDiagram" element={<TaskDoneDiagram />}/>
               </Routes>
           </main>
       </div>
