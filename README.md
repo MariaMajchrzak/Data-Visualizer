@@ -43,10 +43,10 @@ The application is deployed using **GitHub Pages** and is publicly available:
 ## Screenshots
 
 Below are example screenshots showcasing the application.
-<img src="./readmeAssets/homePage.png" width="200"/>
-<img src="./readmeAssets/tasksDiagram.png" width="200"/>
-<img src="./readmeAssets/metric.png" width="200"/>
-<img src="./readmeAssets/usersActivityDiagram.png" width="200"/>
+
+<img src="./readmeAssets/homePage.png" width="250"/> <img src="./readmeAssets/tasksDiagram.png" width="250" />
+
+<img src="./readmeAssets/metric.png" width="250" /><img src="./readmeAssets/usersActivityDiagram.png" width="250" />
 
 ## AI Usage 
 
@@ -55,5 +55,6 @@ During the development of this project, AI tools were used to assist with:
 - Checking code syntax.
 - Helping to write README content.
 - Assisting with the use of the **Recharts** library for data visualization.
+- Providing quick explanations.
 
-AI was used only as a helper tool.
+AI was used only as a helper tool. The main AI tool used was ChatGPT. 
