@@ -17,14 +17,6 @@ This application:
 
 The project is intended as a practical example of working with APIs, data processing, and visualization in React.
 
-## Technologies
-
-- React
-- JavaScript
-- Fetch API
-- Recharts library
-- JSONPlaceholder API
-
 ## Build & Run Locally
 
 ```bash
@@ -35,8 +27,33 @@ The application will be available at:
 ```bash
 http://localhost:3000
 ```
-
 ## Live Demo
 The application is deployed using **GitHub Pages** and is publicly available:
 
 [https://mariamajchrzak.github.io/Data-Visualizer/](https://mariamajchrzak.github.io/Data-Visualizer/)
+
+## Technologies
+
+- React
+- JavaScript
+- Fetch API
+- Recharts library
+- JSONPlaceholder API
+
+## Screenshots
+
+Below are example screenshots showcasing the application.
+<img src="./readmeAssets/homePage.png" width="200"/>
+<img src="./readmeAssets/tasksDiagram.png" width="200"/>
+<img src="./readmeAssets/metric.png" width="200"/>
+<img src="./readmeAssets/usersActivityDiagram.png" width="200"/>
+
+## AI Usage 
+
+During the development of this project, AI tools were used to assist with:
+
+- Checking code syntax.
+- Helping to write README content.
+- Assisting with the use of the **Recharts** library for data visualization.
+
+AI was used only as a helper tool.
