@@ -30,7 +30,7 @@ function AverageCommentsMetrics() {
         <div>
             <h2> Average amount  of  comments</h2>
 
-            avg : {totalNumberOfComments / totalNumberOfPosts}
+            avg : {totalNumberOfPosts != 0 ? totalNumberOfComments / totalNumberOfPosts : ""}
 
         </div>
     );

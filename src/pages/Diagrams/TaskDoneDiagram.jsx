@@ -46,7 +46,7 @@ function TaskDoneDiagram() {
                     dataKey="value"
                 >
                     {data.map(item => (
-                        <Cell key={`cell-${item.name}`}  fill={item.name == "false" ? "red" : "green"} />
+                        <Cell key={`cell-${item.name}`}  fill={item.name === "false" ? "red" : "green"} />
                     ))}
                 </Pie>
                 <Legend dataKey="value" align="left"/>
