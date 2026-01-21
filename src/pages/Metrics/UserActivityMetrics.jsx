@@ -13,6 +13,7 @@ function UserActivityMetrics() {
             else{
                 console.log(response);
                 let json = await response.json();
+
                 let groupByUserId = Object.groupBy(json,item => item.userId);
                 setPosts(groupByUserId);
             }
@@ -30,7 +31,6 @@ function UserActivityMetrics() {
                 console.log(response);
                 let json = await response.json();
                 setUsers(json);
-                console.log(json);
             }
         }catch(err){
             console.log("error with fetching data: ", err);
@@ -45,7 +45,7 @@ function UserActivityMetrics() {
 
 
     return (
-        <div className={styles.pageConteiner}>
+        <div className={styles.pageContainer}>
             <h2 className={styles.h2}> Users number of posts:</h2>
             <ul className={styles.ul}>
                 {Object.entries(posts).map(([key,value]) => {

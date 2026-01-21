@@ -13,8 +13,10 @@ function TaskDoneMetrics() {
             }
             else{
                 console.log(response);
+
                 let json = await response.json();
                 setTotalNumberOfTasks(json.length);
+
                 let groupByStatus = Object.groupBy(json, item => item.completed)
                 setTasks(groupByStatus);
             }
@@ -29,7 +31,7 @@ function TaskDoneMetrics() {
     }, []);
 
     return (
-        <div className={styles.pageConteiner}>
+        <div className={styles.pageContainer}>
             <h2 className={styles.h2}>
                 Task completion breakdown:
             </h2>

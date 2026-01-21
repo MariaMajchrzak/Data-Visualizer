@@ -1,4 +1,4 @@
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useState} from "react";
 import styles from "../../styles/Metrics.module.css";
 
 function AverageCommentsMetrics() {
@@ -15,8 +15,8 @@ function AverageCommentsMetrics() {
                 let json = await response.json();
                 setTotalNumberOfComments(json.length);
 
-                let grupByPost = Object.groupBy(json,item => item.postId)
-                setTotalNumberOfPosts(Object.values(grupByPost).reduce((total, item) => total + 1, 0));
+                let groupByPost = Object.groupBy(json,item => item.postId)
+                setTotalNumberOfPosts(Object.values(groupByPost).reduce((total, item) => total + 1, 0));
             }
         }catch(err){
             console.log("error with fetching data: ", err);
@@ -28,7 +28,7 @@ function AverageCommentsMetrics() {
 
 
     return (
-        <div className={styles.pageConteiner}>
+        <div className={styles.pageContainer}>
             <h2 className={styles.h2}> Average amount  of  comments:</h2>
             <div className={styles.avgComments}>
                 {totalNumberOfPosts !== 0 ? totalNumberOfComments / totalNumberOfPosts : ""}

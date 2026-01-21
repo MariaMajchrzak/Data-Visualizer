@@ -1,0 +1,16 @@
+.pageContainer{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--mainColor);
+}
+.h2{
+    font-weight: 700;
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px var(--secondColor);
+    color: var(--textColor);
+    margin: 80px;
+}
