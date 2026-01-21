@@ -9,3 +9,9 @@ body{
 .pageContainer{
     flex: 1;
 }
+:root{
+    --mainColor: #F3F4F4;
+    --secondColor: #1D546D;
+    --thirdColor: #5F9598;
+    --textColor: #061E29;
+}

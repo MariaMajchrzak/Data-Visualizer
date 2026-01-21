@@ -1,0 +1,63 @@
+.pageConteiner{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--mainColor);
+}
+.h2{
+    font-weight: 700;
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px var(--secondColor);
+    color: var(--textColor);
+}
+.percentfalse{
+    font-weight: 700;
+    font-size: 8em;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px var(--thirdColor);
+    color: var(--secondColor);
+    margin: 40px;
+}
+.percenttrue{
+    font-weight: 700;
+    font-size: 8em;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px var(--thirdColor);
+    color: var(--secondColor);
+    margin: 40px;
+    margin-top: 60px;
+}
+.subtitles{
+    font-weight: 500;
+    font-size: 0.2em;
+    color: var(--secondColor);
+    text-align: center;
+}
+
+.li{
+    font-weight: 500;
+    font-size: 2em;
+    color: var(--secondColor);
+    text-align: center;
+}
+.li:hover{
+    transform: scale(1.1);
+    color: var(--textColor);
+    transition: ease-in 0.1s;
+}
+.ul{
+    list-style: none;
+}
+.avgComments{
+    font-weight: 700;
+    font-size: 8em;
+    text-shadow: 1px 1px 5px var(--thirdColor);
+    color: var(--secondColor);
+    margin: 30px;
+    padding: 50px;
+    border-radius: 20px;
+    border: 3px dashed var(--secondColor);
+}

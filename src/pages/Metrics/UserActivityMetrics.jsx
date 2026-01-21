@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-
+import styles from "../../styles/Metrics.module.css";
 function UserActivityMetrics() {
     const [posts,setPosts] = useState([]);
     const [users,setUsers] = useState([]);
@@ -45,15 +45,15 @@ function UserActivityMetrics() {
 
 
     return (
-        <div>
-            <h2> Users number of posts</h2>
-            <ol>
+        <div className={styles.pageConteiner}>
+            <h2 className={styles.h2}> Users number of posts:</h2>
+            <ul className={styles.ul}>
                 {Object.entries(posts).map(([key,value]) => {
                     return(
-                        <li key={key}> {(users.find(user => user.id === Number(key)))?.name} : {value.length} </li>
+                        <li className={styles.li} key={key}> {(users.find(user => user.id === Number(key)))?.name} : {value.length} </li>
                     )
                 })}
-            </ol>
+            </ul>
         </div>
     );
 }

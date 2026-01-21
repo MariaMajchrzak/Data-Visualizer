@@ -1,4 +1,5 @@
 import {useEffect, useRef, useState} from "react";
+import styles from "../../styles/Metrics.module.css";
 
 function AverageCommentsMetrics() {
     const [totalNumberOfComments,setTotalNumberOfComments] = useState(0);
@@ -27,10 +28,11 @@ function AverageCommentsMetrics() {
 
 
     return (
-        <div>
-            <h2> Average amount  of  comments</h2>
-
-            avg : {totalNumberOfPosts != 0 ? totalNumberOfComments / totalNumberOfPosts : ""}
+        <div className={styles.pageConteiner}>
+            <h2 className={styles.h2}> Average amount  of  comments:</h2>
+            <div className={styles.avgComments}>
+                {totalNumberOfPosts !== 0 ? totalNumberOfComments / totalNumberOfPosts : ""}
+            </div>
 
         </div>
     );

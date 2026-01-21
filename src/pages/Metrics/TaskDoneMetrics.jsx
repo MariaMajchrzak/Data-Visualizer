@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import styles from "../../styles/Metrics.module.css";
 
 function TaskDoneMetrics() {
     const [tasks,setTasks] = useState([]);
@@ -28,17 +29,18 @@ function TaskDoneMetrics() {
     }, []);
 
     return (
-        <div>
-            <h2>
-                total number of task {totalNumberOfTasks}
+        <div className={styles.pageConteiner}>
+            <h2 className={styles.h2}>
+                Task completion breakdown:
             </h2>
-            <ol>
+            <div>
                 {Object.entries(tasks).map(([key,value]) => {
-                    return(<li key={key}>
-                        {key} : {value.length} = {Math.floor((value.length / totalNumberOfTasks) * 100)} %
-                    </li>)
+                    return(<div className={styles[`percent${key}`]}>
+                        {Math.floor((value.length / totalNumberOfTasks) * 100)} %
+                        <div className={styles.subtitles}> {key === 'true' ? "done" : "not done"} </div>
+                    </div>)
                 })}
-            </ol>
+            </div>
         </div>
     );
 }
